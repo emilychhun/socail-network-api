@@ -52,13 +52,9 @@
   View a demonstration of the application:
   <br />
   
+ ![alt text](https://github.com/emilychhun/E-commerce-/blob/main/E-commerce1.gif "Logo Title Text 1")
  <br />
-
-  ![](./picture1.PNG)
-
-  <br />
-  
- ![](./picture2.PNG)
+ ![alt text](https://github.com/emilychhun/E-commerce-/blob/main/E-commerce2.gif "Logo Title Text 1")
   
   ## Licence
   📝📑
