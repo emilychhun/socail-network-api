@@ -54,7 +54,7 @@
   
  ![alt text](https://github.com/emilychhun/socail-network-api/blob/main/video1.gif "Logo Title Text 1")
  <br />
- ![alt text](https://github.com/emilychhun/E-commerce-/blob/main/E-commerce2.gif "Logo Title Text 1")
+ ![alt text](https://github.com/emilychhun/socail-network-api/blob/main/video2.gif "Logo Title Text 1")
   
   ## Licence
   📝📑
