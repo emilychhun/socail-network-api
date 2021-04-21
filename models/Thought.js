@@ -8,6 +8,10 @@ let ReactionSchema = new Schema(
         type: Schema.Types.ObjectId,
         default: () => new Types.ObjectId()
       },
+      username: {
+        type: String,
+        required: true,
+      },
       reactionBody: {
         type: String,
         required: true,
@@ -15,10 +19,7 @@ let ReactionSchema = new Schema(
         minlength: 1,
         maxlength: 280
       },
-      username: {
-        type: String,
-        required: true,
-      },
+      
       createdAt: {
         type: Date,
         default: Date.now,
@@ -40,16 +41,17 @@ let ThoughtSchema = new Schema (
             minlength: 1,
             maxlength: 250
         },
+        username: {
+          type: String,
+          required: true,
+          ref: 'User'
+      },
         createdAt: {
             type: Date,
             default: Date.now,
             get: createdAtVal => dateFormat(createdAtVal)
         },
-        username: {
-            type: String,
-            required: true,
-            ref: 'User'
-        },
+       
         reactions: [ReactionSchema],
     },
     {

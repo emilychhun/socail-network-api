@@ -2,11 +2,11 @@ let router = require('express').Router();
 
 let {
     getAllThoughts,
-    getThoughtById,
     createThought,
+    getThoughtById,
+    deleteThought,
     addReaction,
     updateThought,
-    deleteThought,
     removeReaction
 } = require('../../controllers/thought-controller')
 //set up GET all and POST at /api/Thoughts

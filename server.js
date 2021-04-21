@@ -1,9 +1,11 @@
+let mongoose = require('mongoose');
 
 let express = require('express');
-let mongoose = require('mongoose');
 
 let app = express();
 let PORT = process.env.PORT || 3001;
+
+
 //Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -11,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(require('./routes'));
 //connect db
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network23', {
   useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true

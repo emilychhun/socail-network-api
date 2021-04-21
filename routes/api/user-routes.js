@@ -4,10 +4,10 @@ let router = require('express').Router();
 let {
     getAllUsers,
     getUserById,
-    createUser,
-    addFriend,
-    updateUser,
     deleteUser,
+    addFriend,
+    createUser,
+    updateUser,
     removeFriend
 } = require('../../controllers/user-controller');
 //set up GET all and POST at /api/user
