@@ -1,6 +1,6 @@
-const { User } = require('../models')
+let { User } = require('../models')
 
-const userController = {
+let userController = {
     //get all users
     getAllUsers(req,res) {
         User.find({})
@@ -29,7 +29,7 @@ const userController = {
             })
            .select('-__v')
            .then(dbUserData => {
-            // If no pizza is found, send 404
+            // If no user is found, send 404
             if (!dbUserData) {
               res.status(404).json({ message: 'No user found with this id!' });
               return;
@@ -53,7 +53,7 @@ const userController = {
      addFriend({ params, body}, res) {
          User.findOneAndUpdate(
              {_id: params.userId},
-             { $push: { friends: params.friendId } },
+             { $push: { friends: body } },
              { new: true, runValidators: true}
          )
          .then(dbUserData => {
@@ -93,7 +93,7 @@ const userController = {
      },
 
      //remove Friend
-     removeFriend( { params, body }, res) {
+     removeFriend( { params }, res) {
          User.findOneAndUpdate(
              { _id: params.userId },
              { $pull: { friends: params.friendId }},

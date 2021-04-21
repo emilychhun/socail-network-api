@@ -1,8 +1,8 @@
-const { Schema, model } = require('mongoose');
-const moment = require('moment');
+let { Schema, model } = require('mongoose');
+let dateFormat = require("dateformat");
 
 
-const UserSchema = new Schema({
+let UserSchema = new Schema({
   username: {
     type: String,
     required: true,
@@ -39,9 +39,9 @@ const UserSchema = new Schema({
 );
 
 // create the User Model using the Schema
-const User = model('User', UserSchema);
+let User = model('User', UserSchema);
 
-// get total count of comments and replies on retrieval
+// get total count of friends and replies on retrieval
 UserSchema.virtual('friendCount').get(function() {
   return this.friends.length;
 });

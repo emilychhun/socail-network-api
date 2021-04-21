@@ -1,7 +1,7 @@
-const { Schema, model, Types } = require('mongoose');
-const moment = require('moment');
+let { Schema, model, Types } = require('mongoose');
+let dateFormat = require("dateformat");
 
-const ReactionSchema = new Schema(
+let ReactionSchema = new Schema(
     {
       // set custom id to avoid confusion with parent comment _id
       reactionId: {
@@ -22,7 +22,7 @@ const ReactionSchema = new Schema(
       createdAt: {
         type: Date,
         default: Date.now,
-        get: createdAtVal => moment(createdAtVal).format('MMM DD, YYYY [at] hh:mm a')
+        get: createdAtVal => dateFormat(createdAtVal)
       }
     },
     {
@@ -32,7 +32,7 @@ const ReactionSchema = new Schema(
     }
   );
 
-const ThoughtSchema = new Schema (
+let ThoughtSchema = new Schema (
     {
         thoughtText: {
             type: String,
@@ -43,7 +43,7 @@ const ThoughtSchema = new Schema (
         createdAt: {
             type: Date,
             default: Date.now,
-            get: (createdAtVal) => moment(createdAtVal).format('MMM DD, YYYY [at] hh:mm a')
+            get: createdAtVal => dateFormat(createdAtVal)
         },
         username: {
             type: String,
@@ -61,13 +61,13 @@ const ThoughtSchema = new Schema (
   }
 )
 
-
-const Thought = model('Thought', ThoughtSchema);
+//create the Thought model using the ThoughtSchema
+let Thought = model('Thought', ThoughtSchema);
 
   // get total count of friends on retrieval
   ThoughtSchema.virtual('reactionCount').get(function() {
     return this.reactions.length;
   });
 
-
+//export the Thought model
 module.exports = Thought;
