@@ -97,6 +97,6 @@
   Application link: [Video For Thoughts](https://drive.google.com/file/d/17obxd2pi0VQwc8YplSa1DTrURmE7p5pM/view)
   <br />
   
-  Application link: [Video For Reactions and Friends](https://drive.google.com/file/d/17obxd2pi0VQwc8YplSa1DTrURmE7p5pM/view)
+  Application link: [Video For Reactions and Friends](https://drive.google.com/file/d/1KX7I8osDbOqDhRqZOjEXiB8WA5Mz9nBN/view)
   <br />
   
