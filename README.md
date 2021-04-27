@@ -91,10 +91,12 @@
   repo link: [Repo-Link](https://github.com/emilychhun/socail-network-api)
    <br />
 
-  Application link: [Video](https://drive.google.com/file/d/1IuVmtEZ7cIymWQ3bzJhfm7RrSCCwdRXW/view)
+  Application link: [Video For Users](https://drive.google.com/file/d/1IuVmtEZ7cIymWQ3bzJhfm7RrSCCwdRXW/view)
   <br />
   
-  Application link: [Video](https://drive.google.com/file/d/17obxd2pi0VQwc8YplSa1DTrURmE7p5pM/view)
+  Application link: [Video For Thoughts](https://drive.google.com/file/d/17obxd2pi0VQwc8YplSa1DTrURmE7p5pM/view)
+  <br />
   
+  Application link: [Video For Reactions and Friends](https://drive.google.com/file/d/17obxd2pi0VQwc8YplSa1DTrURmE7p5pM/view)
   <br />
   
